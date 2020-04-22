@@ -22,17 +22,20 @@ public class OnWater extends Vehicle {
 		this.cargoCapacity = cargoCapacity;
 	}
 	
+	@Override
 	public boolean goTo(double positionX, double positionY) {
 		System.out.println("Sailing the vessel to coordinates: [" + positionX + ", " + 
 				positionY + "]");
 		return true;
 	}
 	
+	@Override
 	public boolean addFuel(double amount) {
 		System.out.println("Adding " + amount + " l of fuel to the vessel");
 		return true;
 	}
 	
+	@Override
 	public void printInfo() {
 		System.out.println("Vehicle properties: " + '\n' + '\t' + "- serial number: " + 
 				serialNumber + '\n'	+ '\t' + "- capacity: " + noPersons + '\n' + '\t' + 

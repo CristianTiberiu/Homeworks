@@ -22,17 +22,20 @@ public class OnAir extends Vehicle {
 		this.hasFirstClass = hasFirstClass;
 	}
 	
+	@Override
 	public boolean goTo(double positionX, double positionY) {
 		System.out.println("Flying the airplane to coordinates: [ " + positionX + ", " + 
 				positionY + "]");
 		return true;
 	}
 	
+	@Override
 	public boolean addFuel(double amount) {
 		System.out.println("Adding " + amount + " l of fuel to the airplane");
 		return true;
 	}
 	
+	@Override
 	public void printInfo() {
 		System.out.println("Vehicle properties: " + '\n' + '\t' + "- serial number: " + 
 				serialNumber + '\n'	+ '\t' + "- capacity: " + noPersons + '\n' + '\t' + 

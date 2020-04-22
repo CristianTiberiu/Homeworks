@@ -22,17 +22,20 @@ public class OnRoad extends Vehicle {
 		this.noDoors = noDoors;
 	}
 
+	@Override
 	public boolean goTo(double positionX, double positionY) {
 		System.out.println("Driving the vehicle on road to coordinates: [" + 
 				positionX + ", " + positionY + "] ");
 		return true;
 	}
 
+	@Override
 	public boolean addFuel(double amount) {
 		System.out.println("Adding " + amount + " l of fuel to the driving vehicle");
 		return true;
 	}
 	
+	@Override
 	public void printInfo() {
 		System.out.println("Vehicle properties: " + '\n' + '\t' + "- serial number: " + 
 				serialNumber + '\n'	+ '\t' + "- capacity: " + noPersons + '\n' + '\t' + 
